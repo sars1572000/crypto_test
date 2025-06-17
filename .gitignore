@@ -1,0 +1,7 @@
+*.log
+*.pyc
+.idea/*
+/.cache
+/.DS_Store
+/.pytest_cache
+/report
