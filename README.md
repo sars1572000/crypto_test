@@ -6,21 +6,24 @@ The goal is to automate and validate the **9-day weather forecast** feature via 
 ---
 
 ## 📁 Project Structure
+```
+features/
+├── forecast_api.feature          # API BDD feature file
+├── test_forecast.feature         # UI BDD feature file
+└── steps/
+    ├── test_forecast_api_steps.py  # Step definitions for API test
+    └── test_forecast_steps.py      # Step definitions for UI test
 
-├── features
-│ ├── steps
-│ │ ├── test_forecast_api_steps.py # Step definitions for API test
-│ │ └── test_forecast_steps.py # Step definitions for UI test
-│ ├── forecast_api.feature # API BDD feature
-│ └── test_forecast.feature # UI BDD feature
-├── pages
-│ └── HomePage.py # Page Object for forecast page (Appium)
-├── utils
-│ └── weather_api.py # Weather API client 
-├── conftest.py # test fixtures
-├── pytest.ini # Pytest configuration
-└── requirements.txt # Python dependencies
+pages/
+└── HomePage.py                  # Page Object for forecast screen (Appium)
 
+utils/
+└── weather_api.py               # Weather API client functions
+
+conftest.py                      # Pytest fixtures (e.g. Appium config)
+pytest.ini                       # Pytest configuration
+requirements.txt                 # Python dependencies
+```
 
 ---
 
