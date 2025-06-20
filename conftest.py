@@ -5,13 +5,14 @@ from appium.options.android import UiAutomator2Options
 @pytest.fixture(scope="session")
 def driver():
     capabilities = dict(
-        platformName='Android',
-        automationName='uiautomator2',
-        deviceName='Android',
-        appPackage='hko.MyObservatory_v1_0',
-        appActivity='hko.homepage3.HomepageActivity',
+        platformName = 'Android',
+        automationName = 'uiautomator2',
+        deviceName = 'Android',
+        appPackage = 'hko.MyObservatory_v1_0',
+        appActivity = 'hko.homepage3.HomepageActivity',
         udid = '{device udid}',
-        noReset=True
+        noReset = True,
+        autoGrantPermissions = True
     )
 
     appium_server_url = 'http://localhost:4723'
